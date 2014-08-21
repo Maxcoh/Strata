@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bLO-wT-Edg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cQl-VA-0oI">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="bLO-wT-Edg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4c0-us-cSM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qc6-Xe-Xtr" kind="relationship" relationship="rootViewController" id="v65-hr-VDk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eh-Yo-Xbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="16"/>
+        </scene>
+        <!--Landing Page View Controller-->
+        <scene sceneID="9xs-Rk-dz1">
+            <objects>
+                <viewController id="Qc6-Xe-Xtr" customClass="LandingPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hEe-A9-fy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Udc-Ht-C6O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2vb-df-5Ws">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fg-1N-3QB">
+                                <rect key="frame" x="0.0" y="-568" width="320" height="1704"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p4-y3-oMQ">
+                                        <rect key="frame" x="85" y="858" width="150" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="break-no-halo.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="break:" destination="Qc6-Xe-Xtr" eventType="touchUpInside" id="7de-sH-AMh"/>
+                                            <action selector="breaker:" destination="Qc6-Xe-Xtr" eventType="touchUpInside" id="tfM-AR-TiZ"/>
+                                            <action selector="button:" destination="Qc6-Xe-Xtr" eventType="touchUpInside" id="BAY-Hi-h4I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-oM-IB3">
+                                        <rect key="frame" x="85" y="603" width="150" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="make-no-halo.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="make:" destination="Qc6-Xe-Xtr" eventType="touchUpInside" id="wBJ-aH-4tn"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="make-halo.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFZ-zn-Xgk">
+                                        <rect key="frame" x="-92" y="447" width="505" height="505"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="break-halo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fei-p7-Ea0">
+                                        <rect key="frame" x="-92" y="681" width="505" height="505"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zjW-bo-Bbi"/>
+                    <connections>
+                        <outlet property="scrollView" destination="3fg-1N-3QB" id="ZwP-vB-DgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlj-mU-jsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="break-halo.png" width="1059" height="1059"/>
+        <image name="break-no-halo.png" width="320" height="363"/>
+        <image name="make-halo.png" width="1059" height="1059"/>
+        <image name="make-no-halo.png" width="320" height="363"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

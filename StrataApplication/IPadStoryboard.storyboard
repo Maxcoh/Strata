@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="fNN-bU-XLX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Swm-i9-5wH">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="fNN-bU-XLX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="riq-1B-6Ig">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bim-qT-PnB" kind="relationship" relationship="rootViewController" id="iHy-9Y-LZB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMk-2f-dWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="19"/>
+        </scene>
+        <!--Landing Pagei Pad View Controller-->
+        <scene sceneID="H5c-Pt-XM4">
+            <objects>
+                <viewController id="bim-qT-PnB" customClass="LandingPageiPadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKo-Hi-IUO"/>
+                        <viewControllerLayoutGuide type="bottom" id="zg6-dB-8TM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7cn-ld-WAA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssy-Dd-Xwa">
+                                <rect key="frame" x="0.0" y="-1024" width="768" height="3072"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big-old-background-ipad .png" translatesAutoresizingMaskIntoConstraints="NO" id="oQJ-AB-9nf">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="3085"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="make-halo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ca3-lS-CXC">
+                                        <rect key="frame" x="34" y="970" width="700" height="700"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="break-halo.png" translatesAutoresizingMaskIntoConstraints="NO" id="RM0-vv-1eN">
+                                        <rect key="frame" x="34" y="1391" width="700" height="700"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-qi-7Ah">
+                                        <rect key="frame" x="276" y="1632" width="216" height="246"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="break-no-halo.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="breaker:" destination="bim-qT-PnB" eventType="touchUpInside" id="nGJ-2X-cdk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9w-aW-eRk">
+                                        <rect key="frame" x="276" y="1183" width="216" height="246"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="make-no-halo.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="maker:" destination="bim-qT-PnB" eventType="touchUpInside" id="MLA-9e-MT2"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-jb-Qqe">
+                                        <rect key="frame" x="128" y="3" width="513" height="684"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1zX-jb-Qqe" secondAttribute="height" multiplier="3:4" id="Y8l-fU-LrY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aa" textAlignment="center" minimumFontSize="17" background="make-text-input-view.png" disabledBackground="make-text-input-view.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W82-dB-Yap">
+                                        <rect key="frame" x="133" y="688" width="502" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="123" id="6Ng-bz-jWz"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.95294117647058818" green="1" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-kk-rcd">
+                                        <rect key="frame" x="116" y="-13" width="536" height="725"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="photo-view.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonMake:" destination="bim-qT-PnB" eventType="touchUpInside" id="6QJ-V5-XQy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-VY-Ldk">
+                                        <rect key="frame" x="106" y="814" width="557" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="make-button-off.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="make:" destination="bim-qT-PnB" eventType="touchUpInside" id="RYa-P7-Tz6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-cB-azn">
+                                        <rect key="frame" x="296" y="944" width="177" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="arrow-down.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goDown:" destination="bim-qT-PnB" eventType="touchUpInside" id="SSr-CI-TEm"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-dd-TWR">
+                                        <rect key="frame" x="128" y="2146" width="513" height="684"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-gO-TTO">
+                                        <rect key="frame" x="133" y="2838" width="502" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="break-button-off.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="breakButton:" destination="bim-qT-PnB" eventType="touchUpInside" id="83d-qH-4Zu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZE-Bi-Yme">
+                                        <rect key="frame" x="296" y="2074" width="177" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="arrow-up.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goUp:" destination="bim-qT-PnB" eventType="touchUpInside" id="0IY-8P-RLs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sj-UX-KMR">
+                                        <rect key="frame" x="316" y="2969" width="136" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="flip-button.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="flip:" destination="bim-qT-PnB" eventType="touchUpInside" id="sfV-gP-MNr"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xft-GG-ree">
+                                        <rect key="frame" x="128" y="2146" width="513" height="684"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.30213647959183676" green="0.30213647959183676" blue="0.30213647959183676" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95294117647058818" green="1" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="45"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjb-CM-tp4">
+                                        <rect key="frame" x="133" y="2153" width="502" height="669"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="photo-view.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonBreak:" destination="bim-qT-PnB" eventType="touchUpInside" id="CvU-cu-f9i"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strata-main-menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-E0-Kao">
+                                        <rect key="frame" x="42" y="1922" width="178" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GA3-9e-TBz"/>
+                    <connections>
+                        <outlet property="breakButton" destination="Xnh-gO-TTO" id="gsk-Au-IsU"/>
+                        <outlet property="breakImageView" destination="KOD-dd-TWR" id="GVw-XB-PdN"/>
+                        <outlet property="cameraButtonBreak" destination="bjb-CM-tp4" id="mrN-5O-wYS"/>
+                        <outlet property="cameraButtonTop" destination="zbL-kk-rcd" id="gyV-PQ-eXc"/>
+                        <outlet property="flipButton" destination="4Sj-UX-KMR" id="KZV-ZQ-oWR"/>
+                        <outlet property="makeButton" destination="dnS-VY-Ldk" id="Hvp-ie-5Uv"/>
+                        <outlet property="makeImageView" destination="1zX-jb-Qqe" id="JpA-w9-fuc"/>
+                        <outlet property="scrollView" destination="Ssy-Dd-Xwa" id="Xoa-ZV-STt"/>
+                        <outlet property="textFieldMake" destination="W82-dB-Yap" id="vZo-Yz-GJc"/>
+                        <outlet property="textView" destination="xft-GG-ree" id="SR3-1Z-70K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgw-V7-BEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-down.png" width="177" height="57"/>
+        <image name="arrow-up.png" width="177" height="57"/>
+        <image name="big-old-background-ipad .png" width="768" height="3098"/>
+        <image name="break-button-off.png" width="502" height="123"/>
+        <image name="break-halo.png" width="1059" height="1059"/>
+        <image name="break-no-halo.png" width="320" height="363"/>
+        <image name="flip-button.png" width="81" height="93"/>
+        <image name="make-button-off.png" width="502" height="123"/>
+        <image name="make-halo.png" width="1059" height="1059"/>
+        <image name="make-no-halo.png" width="320" height="363"/>
+        <image name="make-text-input-view.png" width="502" height="157"/>
+        <image name="photo-view.png" width="502" height="669"/>
+        <image name="strata-main-menu.png" width="227" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
