@@ -10,6 +10,7 @@
 		FB3885F719A26C9A00DCE82E /* LandingPageiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3885F619A26C9A00DCE82E /* LandingPageiPadViewController.m */; };
 		FB3885FE19A2B68200DCE82E /* big-old-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3885FD19A2B68200DCE82E /* big-old-background.png */; };
 		FB38860219A2C06700DCE82E /* big-old-background-ipad .png in Resources */ = {isa = PBXBuildFile; fileRef = FB38860119A2C06700DCE82E /* big-old-background-ipad .png */; };
+		FBAAEB1119A7C66C00107537 /* background-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAAEB1019A7C66C00107537 /* background-ipad.png */; };
 		FBCAB404199CF5DE000D6DA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCAB403199CF5DE000D6DA5 /* Foundation.framework */; };
 		FBCAB406199CF5DE000D6DA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCAB405199CF5DE000D6DA5 /* CoreGraphics.framework */; };
 		FBCAB408199CF5DE000D6DA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCAB407199CF5DE000D6DA5 /* UIKit.framework */; };
@@ -64,6 +65,7 @@
 		FB3885F619A26C9A00DCE82E /* LandingPageiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageiPadViewController.m; sourceTree = "<group>"; };
 		FB3885FD19A2B68200DCE82E /* big-old-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-old-background.png"; path = "../../../../.Trash/big-old-background.png"; sourceTree = "<group>"; };
 		FB38860119A2C06700DCE82E /* big-old-background-ipad .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-old-background-ipad .png"; path = "../../../big-old-background-ipad .png"; sourceTree = "<group>"; };
+		FBAAEB1019A7C66C00107537 /* background-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-ipad.png"; path = "../../../background-ipad.png"; sourceTree = "<group>"; };
 		FBCAB400199CF5DE000D6DA5 /* StrataApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrataApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCAB403199CF5DE000D6DA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBCAB405199CF5DE000D6DA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +183,7 @@
 				FBCAB45D199E9A61000D6DA5 /* break-button-off.png */,
 				FBCAB45E199E9A61000D6DA5 /* break-button-on.png */,
 				FBCAB45F199E9A61000D6DA5 /* break-halo.png */,
+				FBAAEB1019A7C66C00107537 /* background-ipad.png */,
 				FBCAB460199E9A61000D6DA5 /* break-no-halo.png */,
 				FBCAB462199E9A61000D6DA5 /* break-text-output-view.png */,
 				FBCAB464199E9A61000D6DA5 /* make-button-off.png */,
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCAB46C199E9A61000D6DA5 /* arrow-up.png in Resources */,
+				FBAAEB1119A7C66C00107537 /* background-ipad.png in Resources */,
 				FBCAB46F199E9A61000D6DA5 /* break-halo.png in Resources */,
 				FBCAB47A199E9A61000D6DA5 /* strata-main-menu.png in Resources */,
 				FBDB8EA519A57463009C87AC /* AppIcon72x72.png in Resources */,

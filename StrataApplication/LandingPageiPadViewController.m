@@ -15,8 +15,14 @@
 @implementation LandingPageiPadViewController
 
 -(void)viewWillAppear:(BOOL)animated{
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    UIImage* rotatedImage = [[UIImage alloc] initWithCGImage: appDelegate.loadedImage.CGImage
+    if(_makeImageView.image == NULL){
+        _cameraButtonTop.alpha = 1;
+    }
+    else{
+        _cameraButtonTop.alpha = .015;
+    }
+    _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIImage* rotatedImage = [[UIImage alloc] initWithCGImage: _appDelegate.loadedImage.CGImage
                                                        scale: 1.0
                                                  orientation: UIImageOrientationRight];
     _breakImage = rotatedImage;
@@ -58,6 +64,19 @@
         _cameraButtonBreak.alpha = .015;
         [_scrollView setContentOffset:CGPointMake(0, 1024) animated:NO];
     }
+    else{
+        switch(_currentScreen){
+            case 1:
+                [_scrollView setContentOffset:CGPointMake(0, -1024) animated:NO];
+                break;
+            case 0:
+                [_scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+                break;
+            case -1:
+                [_scrollView setContentOffset:CGPointMake(0, 1024) animated:NO];
+                break;
+        }
+    }
     
     [super viewWillAppear:animated];
 }
@@ -83,6 +102,7 @@
         _breakButton.imageView.image = [UIImage imageNamed:@"break-button-off.png"];
         _cameraButtonBreak.alpha = 1;
         _flipButton.hidden = YES;
+    _currentScreen = -1;
     [_scrollView setContentOffset:CGPointMake(0, 1024) animated:YES];
 }
 
@@ -90,6 +110,7 @@
     _makeImageView.image = NULL;
     _makeButton.imageView.image = [UIImage imageNamed:@"make-button-off.png"];
     _cameraButtonTop.alpha = 1;
+    _currentScreen = 1;
     _textFieldMake.text = @"";
     [_scrollView setContentOffset:CGPointMake(0, -1024) animated:YES];
 }
@@ -103,6 +124,7 @@
 }
 - (IBAction)goDown:(id)sender {
     _canMake = NO;
+    _currentScreen = 0;
     [_scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
@@ -232,7 +254,6 @@
 
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-    
     _scrollView.contentOffset = CGPointMake(0, -950);
 }
 
@@ -245,11 +266,12 @@
 }
 - (IBAction)breakButton:(id)sender {
     if(_breakImageView.image != NULL){
+    _appDelegate.loadedImage = NULL;
     Decoder *decoder = [[Decoder alloc] init];
     
     NSString *decodedText = [decoder decodeMessage:_breakImage];
     _textView.text = decodedText;
-    _textView.font = [UIFont systemFontOfSize:40.0];
+    _textView.font = [UIFont systemFontOfSize:60.0];
     _textView.textColor = [UIColor colorWithRed:(243.0/225.0) green:(255.0/255.0) blue:(226.0/255.0) alpha:1];
     _textView.alpha = .6;
     _flipButton.hidden = NO;
@@ -310,7 +332,7 @@
         [_scrollView setContentOffset:CGPointMake(0, -1024) animated:NO];
         
         if(_makeImageView.image == NULL){
-            _cameraButtonTop.alpha = .6;
+            _cameraButtonTop.alpha = 1;
         }
     }
     else{
@@ -362,6 +384,8 @@
 - (IBAction)goUp:(id)sender {
     _textView.alpha = 0;
     _breakImageView.image = NULL;
+    _appDelegate.loadedImage = NULL;
+    _currentScreen = 0;
     [_scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 

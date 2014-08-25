@@ -9,6 +9,7 @@
         <scene sceneID="Swm-i9-5wH">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="fNN-bU-XLX" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="riq-1B-6Ig">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -36,8 +37,8 @@
                                 <rect key="frame" x="0.0" y="-1024" width="768" height="3072"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big-old-background-ipad .png" translatesAutoresizingMaskIntoConstraints="NO" id="oQJ-AB-9nf">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="3085"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQJ-AB-9nf">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="3150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="make-halo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ca3-lS-CXC">
@@ -49,7 +50,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-qi-7Ah">
-                                        <rect key="frame" x="276" y="1632" width="216" height="246"/>
+                                        <rect key="frame" x="276" y="1629" width="216" height="246"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="break-no-halo.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,7 +60,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9w-aW-eRk">
-                                        <rect key="frame" x="276" y="1183" width="216" height="246"/>
+                                        <rect key="frame" x="276" y="1185" width="216" height="246"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="make-no-halo.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,7 +84,7 @@
                                             <constraint firstAttribute="height" constant="123" id="6Ng-bz-jWz"/>
                                         </constraints>
                                         <color key="textColor" red="0.95294117647058818" green="1" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="78"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" keyboardAppearance="alert" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-kk-rcd">
@@ -169,7 +170,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strata-main-menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-E0-Kao">
-                                        <rect key="frame" x="42" y="1922" width="178" height="61"/>
+                                        <rect key="frame" x="42" y="1933" width="178" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -177,6 +178,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="GA3-9e-TBz"/>
                     <connections>
                         <outlet property="breakButton" destination="Xnh-gO-TTO" id="gsk-Au-IsU"/>
@@ -199,7 +201,7 @@
     <resources>
         <image name="arrow-down.png" width="177" height="57"/>
         <image name="arrow-up.png" width="177" height="57"/>
-        <image name="big-old-background-ipad .png" width="768" height="3098"/>
+        <image name="background-ipad.png" width="768" height="3098"/>
         <image name="break-button-off.png" width="502" height="123"/>
         <image name="break-halo.png" width="1059" height="1059"/>
         <image name="break-no-halo.png" width="320" height="363"/>

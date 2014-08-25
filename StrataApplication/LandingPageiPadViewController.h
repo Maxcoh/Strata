@@ -44,5 +44,7 @@
 @property (strong, nonatomic) UIImage* makeImage;
 @property (strong, nonatomic) UIImage* breakImage;
 @property (nonatomic) BOOL canMake;
+@property (nonatomic) int currentScreen;
+@property (nonatomic) AppDelegate* appDelegate;
 
 @end
